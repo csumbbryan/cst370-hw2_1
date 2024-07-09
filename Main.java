@@ -4,10 +4,7 @@
  *     When you finish the development, download this file and and submit to Canvas
  *     according to the submission instructions.
 
- *     Note that the current filename is "Main.java".
- *     But rename it to "Main_hw2_1.java". Please DO NOT change
- *     the name of the main class "Main"
- *     After that, upload the renamed file on Canvas.
+ *     Please DO NOT change the name of the main class "Main"
  */
 
 // Finish the head comment with Abstract, Name, and Date.
