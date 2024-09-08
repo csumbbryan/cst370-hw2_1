@@ -33,7 +33,6 @@ class Main
 
         for (String value : values) {
             System.out.println(value);
-            System.out.println(value.length());
         }
     }
 }
