@@ -14,6 +14,8 @@
  * Date: MM/DD/YYYY
  */
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 class Main
@@ -22,13 +24,16 @@ class Main
 
         // Develop your program here.
         // The following is just a sample statement and and you need to replace it with your code
-
+        List<String> values = new ArrayList<String>();
         Scanner scanner = new Scanner(System.in);
-        String s1 = scanner.nextLine();
-        String[] values = s1.split(" ");
+        while (scanner.hasNextLine()) {
+            String s1 = scanner.nextLine();
+            values.add(s1);
+        }
 
         for (String value : values) {
             System.out.println(value);
+            System.out.println(value.length());
         }
     }
 }
