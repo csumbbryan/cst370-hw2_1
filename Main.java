@@ -13,15 +13,23 @@
  * Name: Write your name
  * Date: MM/DD/YYYY
  */
- 
-class Main 
+
+import java.util.Scanner;
+
+class Main
 {
     public static void main(String[] args) {
 
         // Develop your program here.
         // The following is just a sample statement and and you need to replace it with your code
-        
-        System.out.println("Hello world!");
+
+        Scanner scanner = new Scanner(System.in);
+        String s1 = scanner.nextLine();
+        String[] values = s1.split(" ");
+
+        for (String value : values) {
+            System.out.println(value);
+        }
     }
 }
 
