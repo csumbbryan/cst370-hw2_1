@@ -56,7 +56,7 @@ class Main
                     if (curDistance < minDistance || minDistance == -1) {
                         minDistance = curDistance;
                     }
-                    if (value1 < value2) {
+                    if (value1 <= value2) {
                         pairs.add(new Pairs(value1, value2));
                         System.out.println("Pair: " + value1 + " " + value2 + ", Distance: " + curDistance);
                     }
