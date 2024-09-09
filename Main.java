@@ -8,10 +8,11 @@
  */
 
 // Finish the head comment with Abstract, Name, and Date.
-/*
- * Abstract: Describe the main ideas of the program.
- * Name: Write your name
- * Date: MM/DD/YYYY
+/* Title: CST370-HW2_1_Java
+ * Abstract: Program accepts an input of a list of integers, and outputs the minimum distance between any two integers,
+ * with all integer pairs that have the minimum distance represented.
+ * Name: Bryan Zanoli
+ * Date: 09/08/2024
  */
 
 import java.util.ArrayList;
