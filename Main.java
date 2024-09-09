@@ -64,6 +64,8 @@ class Main
             }
         }
 
+        System.out.println("Minimum Distance: " + minDistance);
+
         final int min = minDistance;
 
         pairs.forEach(pair -> {
