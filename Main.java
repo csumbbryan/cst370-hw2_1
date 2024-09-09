@@ -64,6 +64,7 @@ class Main
                 values.add(s1);
             }
         }
+        scanner.close();
 
         values = sort(values);
         //System.out.println("Sorted Values: " + values);
