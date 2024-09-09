@@ -47,7 +47,7 @@ class Main
 
     public static void main(String[] args) {
         List<String> values = new ArrayList<String>();
-        values = removeDuplicates(values);
+
         List<Pairs> pairs = new ArrayList<Pairs>();
         int curDistance = 0;
         int minDistance = -1;
@@ -57,6 +57,8 @@ class Main
             String s1 = scanner.nextLine();
             values.add(s1);
         }
+
+        values = removeDuplicates(values);
 
         for (int i = 0; i < values.size(); i++) {
             for (int k = 0; k < values.size(); k++) {
