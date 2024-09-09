@@ -34,7 +34,7 @@ class Main
 
     public static List<String> removeDuplicates(List<String> list) {
         for (int i = 0; i < list.size(); i++) {
-            for (int k = i + 1; k < list.size(); k++) {
+            for (int k = 0; k < list.size(); k++) {
                 if (list.get(i).equals(list.get(k))) {
                     list.remove(k);
                 }
