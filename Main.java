@@ -45,7 +45,6 @@ class Main
                 }
             }
         }
-
         return values;
     }
 
