@@ -42,6 +42,7 @@ class Main
                         values.set(i, values.get(k));
                         values.set(k, Integer.toString(value1));
                     }
+                    System.out.println("Values: " + values);
                 }
             }
         }
