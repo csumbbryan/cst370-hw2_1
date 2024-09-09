@@ -55,12 +55,10 @@ class Main
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNextLine()) {
             String s1 = scanner.nextLine();
-            values.add(s1);
+            if(!values.contains(s1)) {
+                values.add(s1);
+            }
         }
-
-        System.out.println("Values: " + values);
-
-        values = removeDuplicates(values);
 
         System.out.println("Values: " + values);
 
