@@ -65,7 +65,7 @@ class Main
         }
 
         values = sort(values);
-
+        System.out.println("Sorted Values: " + values);
         for (int i = 0; i < values.size(); i++) {
             for (int k = 0; k < values.size(); k++) {
                 if (i != k) {
