@@ -32,17 +32,21 @@ class Main
         }
     }
 
-    public static List<String> removeDuplicates(List<String> list) {
-        for (int i = 0; i < list.size(); i++) {
-            for (int k = 0; k < list.size(); k++) {
-                int value1 = Integer.parseInt(list.get(i));
-                int value2 = Integer.parseInt(list.get(k));
-                if (value1 == value2) {
-                    list.remove(i);
+    public static List<String> sort(List<String> values) {
+        for (int i = 0; i < values.size(); i++) {
+            for (int k = 0; k < values.size(); k++) {
+                if (i != k) {
+                    int value1 = Integer.parseInt(values.get(i));
+                    int value2 = Integer.parseInt(values.get(k));
+                    if (value1 > value2) {
+                        values.set(i, values.get(k));
+                        values.set(k, Integer.toString(value1));
+                    }
                 }
             }
         }
-        return list;
+
+        return values;
     }
 
     public static void main(String[] args) {
@@ -59,6 +63,8 @@ class Main
                 values.add(s1);
             }
         }
+
+        values = sort(values);
 
         for (int i = 0; i < values.size(); i++) {
             for (int k = 0; k < values.size(); k++) {
