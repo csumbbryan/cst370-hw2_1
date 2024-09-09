@@ -58,7 +58,11 @@ class Main
             values.add(s1);
         }
 
+        System.out.println("Values: " + values);
+
         values = removeDuplicates(values);
+
+        System.out.println("Values: " + values);
 
         for (int i = 0; i < values.size(); i++) {
             for (int k = 0; k < values.size(); k++) {
