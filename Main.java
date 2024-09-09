@@ -42,7 +42,6 @@ class Main
                         values.set(i, values.get(k));
                         values.set(k, Integer.toString(value1));
                     }
-                    System.out.println("Values: " + values);
                 }
             }
         }
@@ -51,6 +50,7 @@ class Main
     }
 
     public static void main(String[] args) {
+
         List<String> values = new ArrayList<String>();
 
         List<Pairs> pairs = new ArrayList<Pairs>();
@@ -66,7 +66,7 @@ class Main
         }
 
         values = sort(values);
-        System.out.println("Sorted Values: " + values);
+        //System.out.println("Sorted Values: " + values);
         for (int i = 0; i < values.size(); i++) {
             for (int k = 0; k < values.size(); k++) {
                 if (i != k) {
