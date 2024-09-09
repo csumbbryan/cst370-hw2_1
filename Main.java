@@ -52,14 +52,17 @@ class Main
                 if (i != k) {
                     int value1 = Integer.parseInt(values.get(i));
                     int value2 = Integer.parseInt(values.get(k));
-                    curDistance = Math.abs(value1 - value2);
-                    if (curDistance < minDistance || minDistance == -1) {
-                        minDistance = curDistance;
+                    if (value1 != value2) {
+                        curDistance = Math.abs(value1 - value2);
+                        if (curDistance < minDistance || minDistance == -1) {
+                            minDistance = curDistance;
+                        }
+                        if (value1 <= value2) {
+                            pairs.add(new Pairs(value1, value2));
+                            System.out.println("Pair: " + value1 + " " + value2 + ", Distance: " + curDistance);
+                        }
                     }
-                    if (value1 <= value2) {
-                        pairs.add(new Pairs(value1, value2));
-                        System.out.println("Pair: " + value1 + " " + value2 + ", Distance: " + curDistance);
-                    }
+
                 }
             }
         }
