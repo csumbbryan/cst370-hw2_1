@@ -64,6 +64,14 @@ class Main
             }
         }
 
+        final int min = minDistance;
+
+        pairs.forEach(pair -> {
+            if (pair.distance == min) {
+                System.out.println("Closest Pair: " + pair.x + " " + pair.y + ", Distance: " + pair.distance);
+            }
+        });
+
         //System.out.println(pairs);
     }
 }
