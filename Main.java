@@ -39,7 +39,7 @@ class Main
         List<String> values = new ArrayList<String>();
         List<Pairs> pairs = new ArrayList<Pairs>();
         int curDistance = 0;
-        int minDistance = 0;
+        int minDistance = -1;
 
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNextLine()) {
@@ -53,7 +53,7 @@ class Main
                     int value1 = Integer.parseInt(values.get(i));
                     int value2 = Integer.parseInt(values.get(k));
                     curDistance = Math.abs(value1 - value2);
-                    if (curDistance < minDistance) {
+                    if (curDistance < minDistance || minDistance == -1) {
                         minDistance = curDistance;
                     }
                     if (value1 < value2) {
