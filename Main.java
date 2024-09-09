@@ -74,7 +74,7 @@ class Main
                         }
                         if (value1 <= value2) {
                             pairs.add(new Pairs(value1, value2));
-                            System.out.println("Pair: " + value1 + " " + value2 + ", Distance: " + curDistance);
+                            //System.out.println("Pair: " + value1 + " " + value2 + ", Distance: " + curDistance);
                         }
                     }
 
