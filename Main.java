@@ -46,10 +46,8 @@ class Main
     }
 
     public static void main(String[] args) {
-
-        // Develop your program here.
-        // The following is just a sample statement and and you need to replace it with your code
         List<String> values = removeDuplicates(new ArrayList<String>());
+        System.out.println("Values: " + values);
         List<Pairs> pairs = new ArrayList<Pairs>();
         int curDistance = 0;
         int minDistance = -1;
