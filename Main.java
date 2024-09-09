@@ -60,8 +60,6 @@ class Main
             }
         }
 
-        System.out.println("Values: " + values);
-
         for (int i = 0; i < values.size(); i++) {
             for (int k = 0; k < values.size(); k++) {
                 if (i != k) {
@@ -82,11 +80,11 @@ class Main
             }
         }
 
-        System.out.println("Min Distance: " + minDistance);
+        System.out.println("Min Distance:" + minDistance);
         final int min = minDistance;
         pairs.forEach(pair -> {
             if (pair.distance == min) {
-                System.out.println("Pair: " + pair.x + " " + pair.y);
+                System.out.println("Pair:" + pair.x + " " + pair.y);
             }
         });
 
