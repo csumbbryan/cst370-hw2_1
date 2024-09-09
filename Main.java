@@ -38,7 +38,7 @@ class Main
                 int value1 = Integer.parseInt(list.get(i));
                 int value2 = Integer.parseInt(list.get(k));
                 if (value1 == value2) {
-                    list.remove(k);
+                    list.remove(i);
                 }
             }
         }
