@@ -38,7 +38,7 @@ class Main
                 if (i != k) {
                     int value1 = Integer.parseInt(values.get(i));
                     int value2 = Integer.parseInt(values.get(k));
-                    if (value1 > value2) {
+                    if (value1 < value2) {
                         values.set(i, values.get(k));
                         values.set(k, Integer.toString(value1));
                     }
