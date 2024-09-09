@@ -60,10 +60,6 @@ class Main
                         pairs.add(new Pairs(value1, value2));
                         System.out.println("Pair: " + value1 + " " + value2 + ", Distance: " + curDistance);
                     }
-                    else {
-                        pairs.add(new Pairs(value2, value1));
-                        System.out.println("Pair: " + value1 + " " + value2 + ", Distance: " + curDistance);
-                    }
                 }
             }
         }
