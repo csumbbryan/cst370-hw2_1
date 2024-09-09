@@ -82,13 +82,11 @@ class Main
             }
         }
 
-        System.out.println("Minimum Distance: " + minDistance);
-
+        System.out.println("Min Distance: " + minDistance);
         final int min = minDistance;
-
         pairs.forEach(pair -> {
             if (pair.distance == min) {
-                System.out.println("Closest Pair: " + pair.x + " " + pair.y + ", Distance: " + pair.distance);
+                System.out.println("Pair: " + pair.x + " " + pair.y);
             }
         });
 
