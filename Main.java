@@ -58,6 +58,7 @@ class Main
         int minDistance = -1;
 
         Scanner scanner = new Scanner(System.in);
+        String count = scanner.nextLine();
         while (scanner.hasNextLine()) {
             String s1 = scanner.nextLine();
             if(!values.contains(s1)) {
