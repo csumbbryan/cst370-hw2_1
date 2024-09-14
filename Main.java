@@ -34,12 +34,12 @@ class Main
     }
 
     public static List<String> sort(List<String> values) {
-        for (int i = 0; i < values.size()-1; i++) {
-            for (int k = i+1; k < values.size(); k++) {
+        for (int i = 0; i < values.size(); i++) {
+            for (int k = 0; k < values.size(); k++) {
                 if (i != k) {
                     int value1 = Integer.parseInt(values.get(i));
                     int value2 = Integer.parseInt(values.get(k));
-                    if (value1 > value2) {
+                    if (value1 < value2) {
                         values.set(i, values.get(k));
                         values.set(k, Integer.toString(value1));
                     }
@@ -67,9 +67,9 @@ class Main
         scanner.close();
 
         values = sort(values);
-        System.out.println("Sorted Values: " + values);
-        for (int i = 0; i < values.size()-1; i++) {
-            for (int k = i+1; k < values.size(); k++) {
+        //System.out.println("Sorted Values: " + values);
+        for (int i = 0; i < values.size(); i++) {
+            for (int k = 0; k < values.size(); k++) {
                 if (i != k) {
                     int value1 = Integer.parseInt(values.get(i));
                     int value2 = Integer.parseInt(values.get(k));
@@ -80,7 +80,7 @@ class Main
                         }
                         if (value1 <= value2) {
                             pairs.add(new Pairs(value1, value2));
-                            System.out.println("Pair: " + value1 + " " + value2 + ", Distance: " + curDistance);
+                            //System.out.println("Pair: " + value1 + " " + value2 + ", Distance: " + curDistance);
                         }
                     }
 
